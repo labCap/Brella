@@ -1,0 +1,135 @@
+.footer {
+    background: $dark--green;
+    padding: 100px 0 50px 0;
+
+    &,
+    a {
+        color: #fff;
+
+    }
+
+    a {
+
+        &:hover {
+            color: $gray;
+        }
+    }
+
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 70px;
+        border-bottom: 1px solid #fff;
+    }
+
+    &__start {
+        display: flex;
+        align-items: start;
+    }
+
+    &__logo {
+        margin: 0 100px 0 0;
+    }
+
+    &__col {
+        margin: 0 100px 0 0;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 0.02px;
+        text-transform: uppercase;
+        margin: 0 0 15px 0;
+    }
+
+    &__link {
+        margin: 0 0 15px 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        display: block;
+        transition: all $transition--time linear;
+    }
+
+    &__end {
+        flex: 0 1 355px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.02px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        line-height: 24px;
+    }
+
+    &__form {
+        display: flex;
+        margin: 16px 0 30px;
+    }
+
+    &__input {
+        flex: 1 1 80%;
+        background: transparent;
+        border: 1px solid #fff;
+        padding: 20px;
+        color: #fff;
+        transition: all $transition--time linear;
+
+        &::placeholder {
+            color: #fff;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.02px;
+        }
+
+        &:focus {
+            border-color: $gray;
+        }
+    }
+
+    &__btn {
+        flex: 1 1 20%;
+        background: #fff;
+        color: $dark--green;
+        font-size: 20px;
+        transition: all $transition--time linear;
+
+        &:hover,
+        &:focus {
+            background: $gray;
+        }
+    }
+
+    &__social {
+        margin: 0 -12.5px;
+    }
+
+    &__middle {
+        padding: 70px 0 115px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__copyright {}
+
+    &__privacy {}
+}
+
+.social {
+
+    &__link {
+        transition: all $transition--time linear;
+        margin: 0 12.5px;
+        font-size: 26px;
+    }
+}

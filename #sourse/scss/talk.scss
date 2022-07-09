@@ -1,0 +1,38 @@
+.talk {
+    display: flex;
+    justify-content: center;
+
+    &__img {
+        // flex: 0 1 50%;
+        height: 577px;
+
+        img {
+            max-width: 100%;
+            min-height: 100%;
+        }
+    }
+
+    &__info {
+        flex: 1 1 50%;
+        background: #e3eeed;
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 120px;
+    }
+
+    &__title:nth-child(1) {
+        margin-bottom: 46px;
+    }
+
+    &__title:nth-child(2) {
+        margin-bottom: 60px;
+    }
+
+    &__btn {
+        padding: 13px 23px;
+    }
+}
+
+.talk__info--box {
+    max-width: 423px;
+}

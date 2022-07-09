@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+@import 'rem';
+
+// ###################################################################################################################
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    display: inline-block;
+}
+
+// ###################################################################################################################
+
+$dark--green: #214E41;
+$light--green: #43806C;
+$black: #222;
+$gray: #757575;
+
+$fs--14: 14px;
+$lh--20: 20px;
+
+$transition--time: .2s;
+
+// ###################################################################################################################
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    transition: all $transition--time linear;
+
+    &:hover,
+    &:focus {
+        background: $dark--green;
+    }
+
+    font-weight: 700;
+    font-size: $fs--14;
+    line-height: $lh--20;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    background: $light--green;
+    border-radius: 6px;
+}
+
+.btn1 {
+    transition: all $transition--time linear;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.02px;
+    position: relative;
+    padding-bottom: 14px;
+    color: $dark--green;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        opacity: 1;
+        background-color: $dark--green;
+        transition: all $transition--time linear;
+    }
+
+    &:hover,
+    &:focus {
+
+        &::after {
+            opacity: 0;
+        }
+
+        color: $light--green;
+    }
+}
+
+
+// ###################################################################################################################
+
+@import 'section';
+@import 'header';
+@import 'intro';
+@import 'stat';
+@import 'benefits';
+@import 'insurance';
+@import 'video';
+@import 'employers';
+@import 'partners';
+@import 'blog';
+@import 'talk';
+@import 'footer';

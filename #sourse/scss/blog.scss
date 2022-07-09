@@ -1,0 +1,30 @@
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &__item {
+        flex: 0 1 335px;
+    }
+
+    &__img {
+        margin-bottom: 20px;
+        max-width: 335px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}

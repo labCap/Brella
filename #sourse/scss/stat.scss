@@ -1,0 +1,27 @@
+.stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -46px;
+
+    &__info {
+        flex: 1 1 510px;
+        margin: 0 46px;
+    }
+
+    // &__subtitle {}
+
+    // &__title {}
+
+    // &__text {}
+
+    &__img {
+        flex: 1 1 510px;
+        margin: 0 46px;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

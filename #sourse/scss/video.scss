@@ -1,0 +1,35 @@
+.video {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    &__info {
+        flex: 0 1 545px;
+        margin: 0 120px;
+    }
+
+    // &__subtitle {}
+
+    // &__title {}
+
+    // &__text {}
+
+    // &__btn {}
+
+    &__img {
+        flex: 0 1 295px;
+        // max-width: 295px;
+        // height: 500px;
+        overflow: hidden;
+        position: relative;
+        bottom: 0;
+
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+}

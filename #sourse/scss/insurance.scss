@@ -1,0 +1,57 @@
+.insurance {
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 -50px 60px;
+    }
+
+    &__info {
+        flex: 1 1 600px;
+        margin: 0 50px;
+    }
+
+    // &__subtitle {}
+
+    // &__title {}
+
+    // &__text {}
+
+    &__img {
+        flex: 1 1 560px;
+        margin: 0 50px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__stat {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        margin: 0 -36px;
+    }
+
+    &__stat--item {
+        margin: 0 36px;
+        flex: 1 1 0;
+    }
+
+    &__stat--num {
+        font-family: 'Roboto', sans-serif;
+        font-size: 60px;
+        line-height: 78px;
+        color: #F0A446;
+        margin-bottom: 13px;
+        text-transform: uppercase;
+    }
+
+    &__stat--text {
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0.02px;
+        color: $dark--green;
+    }
+}
