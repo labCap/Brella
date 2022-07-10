@@ -16,6 +16,10 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+
+        @media (max-width:768px) {
+            justify-content: center;
+        }
     }
 
     &__logos--item {
@@ -23,16 +27,23 @@
         flex: 0 1 146px;
         height: 60px;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width:1200px) {
+            margin: 20px;
+        }
 
         img {
             max-width: 100%;
-            display: block;
+            height: auto;
+            // display: block;
         }
     }
 
     &__btn-arrow {
         font-size: 20px;
-        color: #000 $dark--green;
+        color: $dark--green;
         width: 100%;
         position: absolute;
         top: 50%;
@@ -40,5 +51,23 @@
 
         display: flex;
         justify-content: space-between;
+
+        @media (max-width:1200px) {
+            width: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 100%;
+        }
+
     }
+
+
+}
+
+.arrow--right {
+    margin: 0 20px;
+}
+
+.arrow--left {
+    margin: 0 20px;
 }

@@ -4,6 +4,11 @@
     margin-bottom: 76px;
     position: relative;
 
+    @media (max-width:768px) {
+        padding-bottom: 350px;
+    }
+
+
     &__box {
         position: absolute;
 
@@ -12,15 +17,26 @@
         border-radius: 6px;
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         padding: 50px;
         margin: 0 -8px;
 
         bottom: -76px;
+
+        @media (max-width:768px) {
+            padding: 20px;
+        }
+
     }
 
     &__item {
         flex: 1 1 356px;
         margin: 0 8px;
+
+        @media (max-width:768px) {
+            margin: 20px 0;
+        }
+
         padding: 0 0 0 70px;
         position: relative;
         color: $dark--green;
@@ -28,10 +44,17 @@
 
     &__img {
         position: absolute;
-        left: 0;
         top: 50%;
-        left: 5px;
+        left: 0px;
         transform: translateY(-50%);
+
+        width: 46px;
+        height: 46px;
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
     }
 
     &__title {

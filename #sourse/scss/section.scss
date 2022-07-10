@@ -1,6 +1,10 @@
 .section {
     padding: 120px 0;
 
+    @media (max-width:425px) {
+        padding: 60px 0;
+    }
+
     &__subtitle {
         font-weight: 400;
         font-size: 13px;
@@ -17,6 +21,10 @@
         line-height: 46px;
         color: $dark--green;
         margin: 0 0 34px 0;
+
+        @media (max-width:1200px) {
+            font-size: 32px;
+        }
     }
 
     &__text {

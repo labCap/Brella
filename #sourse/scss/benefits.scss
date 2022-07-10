@@ -1,10 +1,19 @@
 .benefits {
     display: flex;
+
+    @media (max-width:768px) {
+        flex-direction: column;
+    }
+
     justify-content: space-between;
 
     &__title {
         i {
             margin: 0 0 0 40px;
+
+            @media (max-width:1200px) {
+                margin: 0 0 0 10px;
+            }
         }
     }
 
@@ -14,6 +23,11 @@
         line-height: 42px;
         color: $light--green;
         margin: 0 0 18px 0;
+
+        @media (max-width:425px) {
+            font-size: 20px;
+            line-height: 35px;
+        }
     }
 
     &__text {
@@ -29,6 +43,15 @@
 .benefits--box {
     flex: 1 1 0;
     padding: 120px;
+
+
+    @media (max-width:1200px) {
+        padding: 60px;
+    }
+
+    @media (max-width:425px) {
+        padding: 30px;
+    }
 
     display: flex;
     justify-content: center;

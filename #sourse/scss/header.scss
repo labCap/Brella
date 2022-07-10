@@ -3,6 +3,11 @@
 
     &__inner {
         padding: 33px 50px;
+
+        @media (max-width:768px) {
+            padding: 20px;
+        }
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -17,6 +22,11 @@
 
     &__btn {
         margin: 0 0 0 69px;
+
+        @media (max-width:768px) {
+            display: none;
+        }
+
     }
 
     &__leng {
@@ -48,17 +58,21 @@
 .burger {
     width: 30px;
     height: 20px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    margin: 0 20px;
+    margin: 0;
 
     &__item {
         width: 100%;
         height: 2px;
         border-radius: 100px;
         background: $dark--green;
+    }
+
+    @media (max-width:1200px) {
+        display: flex;
     }
 }
 

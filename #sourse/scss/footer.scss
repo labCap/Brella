@@ -18,14 +18,17 @@
 
     &__top {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding-bottom: 70px;
         border-bottom: 1px solid #fff;
     }
 
     &__start {
+        flex-wrap: wrap;
         display: flex;
         align-items: start;
+        margin-bottom: 20px;
     }
 
     &__logo {
@@ -116,13 +119,19 @@
 
     &__bottom {
         display: flex;
+        flex-wrap: wrap;
+
         justify-content: space-between;
         align-items: center;
     }
 
-    &__copyright {}
+    &__copyright {
+        margin: 10px 0;
+    }
 
-    &__privacy {}
+    &__privacy {
+        margin: 10px 0;
+    }
 }
 
 .social {

@@ -2,9 +2,20 @@
     display: flex;
     justify-content: center;
 
+    @media (max-width:768px) {
+        flex-direction: column;
+    }
+
     &__img {
         // flex: 0 1 50%;
         height: 577px;
+
+        @media (max-width:1200px) {
+            height: auto;
+        }
+
+        display: flex;
+        justify-content: center;
 
         img {
             max-width: 100%;
@@ -17,7 +28,11 @@
         background: #e3eeed;
         display: flex;
         align-items: center;
-        padding: 0 0 0 120px;
+        padding: 50px 0 50px 120px;
+
+        @media (max-width:1200px) {
+            padding-left: 60px;
+        }
     }
 
     &__title:nth-child(1) {
