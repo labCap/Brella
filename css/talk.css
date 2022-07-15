@@ -1,0 +1,48 @@
+.talk {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .talk {
+    flex-direction: column;
+  }
+}
+.talk__img {
+  height: 577px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  .talk__img {
+    height: auto;
+  }
+}
+.talk__img img {
+  max-width: 100%;
+  min-height: 100%;
+}
+.talk__info {
+  flex: 1 1 50%;
+  background: #e3eeed;
+  display: flex;
+  align-items: center;
+  padding: 50px 0 50px 120px;
+}
+@media (max-width: 1200px) {
+  .talk__info {
+    padding-left: 60px;
+  }
+}
+.talk__title:nth-child(1) {
+  margin-bottom: 46px;
+}
+.talk__title:nth-child(2) {
+  margin-bottom: 60px;
+}
+.talk__btn {
+  padding: 13px 23px;
+}
+
+.talk__info--box {
+  max-width: 423px;
+}

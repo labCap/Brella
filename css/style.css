@@ -680,13 +680,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-weight: 700;
   margin: 0 -36px;
+}
+@media (max-width: 768px) {
+  .insurance__stat {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .insurance__stat--item {
   margin: 20px 36px;

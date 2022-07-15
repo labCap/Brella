@@ -1,15 +1,31 @@
 .video {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .video {
+    flex-direction: column;
+  }
+}
+.video__info {
+  flex: 0 1 545px;
+  margin: 0 120px;
+}
+@media (max-width: 768px) {
+  .video__info {
+    flex: auto;
+    margin: 50px 0;
+  }
+}
+.video__img {
+  flex: 0 1 295px;
+  overflow: hidden;
+  position: relative;
+  bottom: 0;
+}
+.video__img img {
+  width: 100%;
+  display: block;
 }

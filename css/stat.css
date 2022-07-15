@@ -1,0 +1,33 @@
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -46px;
+}
+@media (max-width: 768px) {
+  .stat {
+    flex-direction: column;
+  }
+}
+.stat__info {
+  flex: 1 1 510px;
+  margin: 0 46px;
+}
+@media (max-width: 768px) {
+  .stat__info {
+    flex: auto;
+  }
+}
+.stat__img {
+  flex: 1 1 510px;
+  margin: 0 46px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .stat__img {
+    flex: auto;
+  }
+}
+.stat__img img {
+  max-width: 100%;
+}
